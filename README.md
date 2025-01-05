@@ -9,6 +9,7 @@ This is a simple to-do list application built using HTML, CSS, and JavaScript. I
 - Mark tasks as completed.
 - Clear all tasks from the list.
 - Once Task is Clicked, It Will Be Removed After 1 Second.
+- Add Task on Enter Key Press.
 
 ## Bugs and Fixes:
  - fixed icon.png path in index.html
