@@ -11,7 +11,8 @@
         <div class="todo-app">
             <h2> <img src="images/icon.png"> To-Do List </h2>
             <div class = "row">
-                <input type="text" id="input-box" placeholder="Add Item">
+                <input type="text" id="input-box" placeholder="Add Item"
+                onkeypress="if(event.key === 'Enter') addTask()">
                 <button onclick="addTask()">Add</button>
             </div>  
             

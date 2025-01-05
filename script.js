@@ -1,5 +1,7 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
+const filterTask = document.getElementById("filterTask");
+const filterTasks = document.getElementById('filterTasks');
 
 function addTask()
 {
@@ -30,22 +32,23 @@ listContainer.addEventListener("click", function(e)
     {
         e.target.classList.toggle("checked");
         
+        // removing the task after 1 second
         setTimeout(() => {
             e.target.remove();
             saveData();
         }, 1000);
 
-        
+        // saving the data after removing the task
         saveData();
     }
     
+    // removing the task after clicking the span region (X) 
     else if (e.target.tagName === "SPAN")
     {
         e.target.parentElement.remove();
         saveData();
     }
 }, false);
-
 
 
 function saveData()
@@ -59,3 +62,7 @@ function showTask()
 }
 
 showTask();
+
+
+
+
